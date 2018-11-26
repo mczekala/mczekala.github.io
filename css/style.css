@@ -1,0 +1,117 @@
+ nav {
+   overflow: hidden;
+   background-color: #333;
+   z-index: 2;
+ }
+
+ nav a {
+   float: left;
+   display: block;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 14px;
+   text-decoration: none;
+ }
+
+ nav a:hover {
+   background-color: #222;
+ }
+
+ .content {
+   padding: 16px;
+ }
+
+ .sticky {
+   position: fixed;
+   top: 0;
+   width: 100%;
+ }
+
+ .sticky+.content {
+   padding-top: 60px;
+ }
+
+ .section-header {
+   text-align: center;
+   font-size: 40px;
+ }
+
+ .hero {
+   height: 100vh;
+   display: block;
+   position: relative;
+   background-color: black;
+ }
+
+ .hero::after {
+   content: "";
+   background: url(../images/bg.jpeg);
+   opacity: 0.5;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   position: absolute;
+ }
+
+ .text {
+   width: 50%;
+   margin: 0 auto;
+   padding-top: 300px;
+   color: white;
+   text-align: center;
+   font-size: 100px;
+ }
+
+ .about {
+   height: 50vh;
+   background-color: #fff;
+   text-align: center;
+   padding-top: 10vh;
+   width: 50vw;
+   font-family: 'Permanent Marker', cursive;
+   margin: 0 auto;
+   font size: 50px;
+ }
+
+ .photo {
+   height: 50vh;
+   background-color: #f5f5f5;
+ }
+
+ .portfolio {
+   background-color: #fff;
+   overflow-x: hidden;
+ }
+
+ footer {
+   height: 20px;
+   background-color: #333;
+   color: #f2f2f2;
+   padding: 14px;
+   text-align: center;
+ }
+.image-wrapper {
+    height: 400px;
+}
+img {
+    width: 320px;
+    height: 213px;
+    float: right;
+}
+.text-left {
+    float: left;
+}
+.text-right {
+    float: right;
+}
+.right-slide {
+    height: 100px;
+    width: 100px;
+    margin-left: 100vw;
+}
+.left-slide {
+    height: 100px;
+    width: 100px;
+    margin-left: -100px;
+}
