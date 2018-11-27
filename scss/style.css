@@ -1,0 +1,119 @@
+body {
+  background-color: #FEFEFE; }
+
+.content {
+  padding: 16px; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+.sticky + .content {
+  padding-top: 60px; }
+
+.section-header {
+  font-size: 40px;
+  order: 0; }
+
+nav {
+  background-color: #252F31;
+  overflow: hidden;
+  z-index: 2;
+  font-size: 20px; }
+  nav .logo {
+    color: #ddd;
+    margin-left: 100px;
+    float: left;
+    font-size: 40px;
+    font-family: 'Amatic SC', cursive; }
+  nav .links {
+    display: flex;
+    justify-content: center; }
+    nav .links a {
+      color: #6F6F6F;
+      display: inline-block;
+      padding: 14px;
+      text-align: center;
+      text-decoration: none; }
+      nav .links a:first-child {
+        color: #ddd; }
+      nav .links a:hover {
+        background-color: #222; }
+
+.hero {
+  background-color: black;
+  display: block;
+  height: 100vh;
+  min-height: 700px;
+  position: relative; }
+  .hero::after {
+    background: url(../images/bg.jpeg);
+    background-attachment: fixed;
+    content: "";
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .hero .text {
+    color: white;
+    font-size: 100px;
+    margin: 0 auto;
+    padding-top: 37vh;
+    text-align: center;
+    width: 50%; }
+
+.about {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 20px;
+  height: 50vh;
+  width: 50vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .about .text {
+    order: 1; }
+
+.portfolio {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .portfolio .text {
+    order: 1; }
+  .portfolio img {
+    height: 213px;
+    width: 320px; }
+  .portfolio .img-left {
+    order: 1; }
+  .portfolio .img-right {
+    order: -1; }
+  .portfolio .right-slide {
+    left: 100vw; }
+  .portfolio .left-slide {
+    left: -100vw; }
+  .portfolio .image-wrapper {
+    background-color: #eee;
+    position: relative;
+    height: 300px;
+    width: 500px;
+    margin: 50px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-fill-mode: forwards; }
+
+footer {
+  background-color: #252F31;
+  color: #ddd;
+  height: 20px;
+  padding: 14px;
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
