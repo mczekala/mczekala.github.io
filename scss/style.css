@@ -1,5 +1,6 @@
 body {
-  background-color: #FEFEFE; }
+  background-color: #FEFEFE;
+  position: relative; }
 
 .content {
   padding: 16px; }
@@ -16,11 +17,20 @@ body {
   font-size: 40px;
   order: 0; }
 
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+.rotating {
+  -webkit-animation: rotating 200s linear infinite; }
+
 nav {
   background-color: #252F31;
   overflow: hidden;
-  z-index: 2;
-  font-size: 20px; }
+  z-index: 3;
+  font-size: 20px;
+  opacity: 0.8; }
   nav .logo {
     color: #ddd;
     margin-left: 100px;
@@ -28,8 +38,9 @@ nav {
     font-size: 40px;
     font-family: 'Amatic SC', cursive; }
   nav .links {
+    margin-right: 100px;
     display: flex;
-    justify-content: center; }
+    justify-content: flex-end; }
     nav .links a {
       color: #6F6F6F;
       display: inline-block;
@@ -42,34 +53,43 @@ nav {
         background-color: #222; }
 
 .hero {
-  background-color: black;
-  display: block;
   height: 100vh;
   min-height: 700px;
+  overflow: hidden;
   position: relative; }
-  .hero::after {
-    background: url(../images/bg.jpeg);
-    background-attachment: fixed;
-    content: "";
-    opacity: 0.5;
+  .hero .hero-after {
+    margin-top: -600px;
+    margin-left: -150px;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; }
+    z-index: -10; }
   .hero .text {
+    font-family: 'Permanent Marker', cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
     color: white;
-    font-size: 100px;
-    margin: 0 auto;
-    padding-top: 37vh;
-    text-align: center;
-    width: 50%; }
+    width: 60%;
+    margin: 0 auto; }
+    .hero .text .top {
+      text-align: left;
+      font-size: 40px; }
+    .hero .text .middle {
+      margin: 50px auto;
+      text-align: center;
+      font-size: 60px; }
+    .hero .text .bottom {
+      text-align: right;
+      font-size: 40px; }
 
 .about {
+  background-color: white;
+  position: relative;
+  z-index: 2;
   font-family: 'Permanent Marker', cursive;
   font-size: 20px;
   height: 50vh;
-  width: 50vw;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -79,6 +99,7 @@ nav {
     order: 1; }
 
 .portfolio {
+  background-color: white;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -98,7 +119,7 @@ nav {
   .portfolio .left-slide {
     left: -100vw; }
   .portfolio .image-wrapper {
-    background-color: #eee;
+    background-color: #ECECEC;
     position: relative;
     height: 300px;
     width: 500px;
