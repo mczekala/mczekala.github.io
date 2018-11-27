@@ -23,7 +23,7 @@ body {
   to {
     -webkit-transform: rotate(360deg); } }
 .rotating {
-  -webkit-animation: rotating 200s linear infinite; }
+  -webkit-animation: rotating 400s linear infinite; }
 
 nav {
   background-color: #252F31;
@@ -38,6 +38,7 @@ nav {
     font-size: 40px;
     font-family: 'Amatic SC', cursive; }
   nav .links {
+    font-family: 'Patua One', cursive;
     margin-right: 100px;
     display: flex;
     justify-content: flex-end; }
@@ -84,10 +85,10 @@ nav {
       font-size: 40px; }
 
 .about {
-  background-color: white;
+  background-color: #F8F8F8;
   position: relative;
   z-index: 2;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Patua One', cursive;
   font-size: 20px;
   height: 50vh;
   margin: 0 auto;
@@ -96,9 +97,12 @@ nav {
   align-items: center;
   justify-content: center; }
   .about .text {
-    order: 1; }
+    order: 1;
+    width: 50vw; }
 
 .portfolio {
+  height: 250vh;
+  font-family: 'Patua One', cursive;
   background-color: white;
   overflow-x: hidden;
   display: flex;
@@ -131,6 +135,7 @@ nav {
     animation-fill-mode: forwards; }
 
 footer {
+  font-family: 'Patua One', cursive;
   background-color: #252F31;
   color: #ddd;
   height: 20px;
