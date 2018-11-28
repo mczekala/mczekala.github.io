@@ -93,6 +93,10 @@ nav {
             }
         }
     }
+
+    .hamburger {
+        display: none;
+    }
 }
 
 .hero {
@@ -253,3 +257,89 @@ footer {
     padding: 14px;
     text-align: center;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+    .nav-responsive {
+
+        height: 100vh;
+
+        .logo {
+            margin: 20px 0;
+        }
+
+        .links {
+            margin: 10vh 10vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav {
+        .links {
+            display: none;
+        }
+
+        .hamburger {
+            left: 10px;
+            display: block;
+            width: 40px;
+            height: 35px;
+            border: 0;
+            border-top: 5px solid #ddd;
+            background: transparent;
+            position: relative;
+            transition: 0.3s transform linear;
+        }
+
+        .hamburger::before,
+        .hamburger::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            border-top: 5px solid #ddd;
+            transform: translateY(10px);
+        }
+
+        .hamburger::after {
+            transform: translateY(25px);
+        }
+
+        .close {
+            height: 100px;
+            width: 100px;
+            background-color: antiquewhite;
+        }
+
+
+    }
+}
+
+//@media only screen and (min-width: 601px) and (max-width: 1200px) {
+//
+//    /* CSS rules for browser widths from 601px to 1200 px */
+//    footer {
+//        background-color: #ff0000;
+//    }
+//}
+//
+//@media only screen and (min-width: 1201px) {
+//
+//    /* CSS rules for browser widths from 1201px and up */
+//    footer {
+//        background-color: #0000ff;
+//    }
+//}
+//

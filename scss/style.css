@@ -66,6 +66,8 @@ nav {
         color: #ddd; }
       nav .links a:hover {
         background-color: #222; }
+  nav .hamburger {
+    display: none; }
 
 .hero {
   height: 100vh;
@@ -177,5 +179,49 @@ footer {
   height: 20px;
   padding: 14px;
   text-align: center; }
+
+@media only screen and (max-width: 600px) {
+  .nav-responsive {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .nav-responsive .logo {
+      margin: 20px 0; }
+    .nav-responsive .links {
+      margin: 10vh 10vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+
+  nav .links {
+    display: none; }
+  nav .hamburger {
+    left: 10px;
+    display: block;
+    width: 40px;
+    height: 35px;
+    border: 0;
+    border-top: 5px solid #ddd;
+    background: transparent;
+    position: relative;
+    transition: 0.3s transform linear; }
+  nav .hamburger::before,
+  nav .hamburger::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid #ddd;
+    transform: translateY(10px); }
+  nav .hamburger::after {
+    transform: translateY(25px); }
+  nav .close {
+    height: 100px;
+    width: 100px;
+    background-color: antiquewhite; } }
 
 /*# sourceMappingURL=style.css.map */

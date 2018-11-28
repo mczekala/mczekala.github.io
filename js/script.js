@@ -29,11 +29,21 @@ $(document).ready(function () {
 
 
     $(function () {
-        $('a[href*=#]').on('click', function (e) {
+        $('a').on('click', function (e) {
             e.preventDefault();
             $('html, body').animate({
                 scrollTop: $($(this).attr('href')).offset().top
             }, 500, 'linear');
         });
     });
+
+
+    document.getElementById("hamburger").addEventListener("click", function (event) {
+        var x = document.getElementById("nav");
+        if (x.className === "nav") {
+            x.className += " nav-responsive";
+        } else {
+            x.className = "nav";
+        }
+    })
 }, false);
