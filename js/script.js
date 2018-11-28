@@ -14,7 +14,7 @@ $(document).ready(function () {
         myFunction();
     };
     window.addEventListener("scroll", function (event) {
-        if (window.pageYOffset + window.innerHeight > $('.image-wrapper').position().top) {
+        if (window.pageYOffset + window.innerHeight > $('.slide').position().top) {
             $(".left-slide").animate({
                 left: 100
             }, 500);
