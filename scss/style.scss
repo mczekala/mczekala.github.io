@@ -3,6 +3,8 @@ body {
     position: relative;
 }
 
+
+
 .button {
     display: flex;
     width: 150px;
@@ -106,8 +108,8 @@ nav {
         //        background-attachment: fixed;
         //        content: "";
         //        opacity: 0.5;
-        margin-top: -600px;
-        margin-left: -150px;
+        left: calc(50vw - 1088px);
+        top: calc(50vh - 1088px);
         position: absolute;
         z-index: -10;
     }
@@ -138,7 +140,23 @@ nav {
             text-align: right;
             font-size: 40px;
         }
+
+        .scroll-button {
+            position: absolute;
+            z-index: 20;
+            left: 50%;
+            top: 40vh;
+            width: 24px;
+            height: 24px;
+            border-left: 5px solid #fff;
+            border-bottom: 5px solid #fff;
+            transform: rotate(-45deg);
+            box-sizing: border-box;
+
+        }
     }
+
+
 }
 
 .about {
