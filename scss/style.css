@@ -224,6 +224,13 @@ footer {
     width: 100px;
     background-color: antiquewhite; }
 
+  .hero .text .top {
+    font-size: 20px; }
+  .hero .text .middle {
+    font-size: 30px; }
+  .hero .text .bottom {
+    font-size: 20px; }
+
   .portfolio .slide {
     width: 100vw;
     left: 0 !important;
