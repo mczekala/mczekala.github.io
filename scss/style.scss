@@ -105,7 +105,7 @@ nav {
   //    background-color: black;
   //    display: block;
   height: 100vh;
-  min-height: 700px; //    position: relative;
+  min-height: 550px; //    position: relative;
   overflow: hidden;
   position: relative;
 
@@ -316,6 +316,15 @@ footer {
       height: 100px;
       width: 100px;
       background-color: antiquewhite;
+    }
+  }
+  .portfolio {
+    .slide {
+      left: 0 !important;
+      flex-direction: column;
+    }
+    .img-left {
+      order: -1;
     }
   }
 }

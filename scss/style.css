@@ -73,7 +73,7 @@ nav {
 
 .hero {
   height: 100vh;
-  min-height: 700px;
+  min-height: 550px;
   overflow: hidden;
   position: relative; }
   .hero .hero-after {
@@ -222,6 +222,12 @@ footer {
   nav .close {
     height: 100px;
     width: 100px;
-    background-color: antiquewhite; } }
+    background-color: antiquewhite; }
+
+  .portfolio .slide {
+    left: 0 !important;
+    flex-direction: column; }
+  .portfolio .img-left {
+    order: -1; } }
 
 /*# sourceMappingURL=style.css.map */
