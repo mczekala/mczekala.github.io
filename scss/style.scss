@@ -147,16 +147,13 @@ nav {
     }
 
     .scroll-button {
-      position: absolute;
-      z-index: 20;
-      left: 50%;
-      top: 40vh;
+      margin: 5vh auto 0 auto;
+      display: block;
       width: 24px;
       height: 24px;
       border-left: 5px solid #fff;
       border-bottom: 5px solid #fff;
       transform: rotate(-45deg);
-      box-sizing: border-box;
     }
   }
 }
@@ -167,7 +164,7 @@ nav {
   z-index: 2;
   font-family: 'Patua One', cursive;
   font-size: 20px;
-  padding: 10vh 0;
+  padding: 15vh 0;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -182,7 +179,7 @@ nav {
 }
 
 .portfolio {
-  padding: 10vh 0;
+  padding: 15vh 0;
   font-family: 'Patua One', cursive;
   background-color: white;
   overflow-x: hidden;
@@ -322,13 +319,13 @@ footer {
   .hero {
     .text {
       .top {
-        font-size: 20px;
-      }
-      .middle {
         font-size: 30px;
       }
+      .middle {
+        font-size: 45px;
+      }
       .bottom {
-        font-size: 20px;
+        font-size: 30px;
       }
     }
   }
