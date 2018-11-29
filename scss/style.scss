@@ -63,12 +63,11 @@ nav {
   font-size: 20px;
   opacity: 0.8;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 
   .logo {
     color: #ddd;
-    margin-left: 100px;
     float: left;
     font-size: 40px;
     font-family: 'Amatic SC', cursive;
@@ -284,7 +283,6 @@ footer {
   }
 
   nav {
-    justify-content: space-around;
     .links {
       display: none;
     }
