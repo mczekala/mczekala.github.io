@@ -225,6 +225,7 @@ footer {
     background-color: antiquewhite; }
 
   .portfolio .slide {
+    width: 100vw;
     left: 0 !important;
     flex-direction: column; }
   .portfolio .img-left {
